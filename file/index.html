@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="w3.css" type="text/css" />
+        <meta charset="utf-8" />
+        <title>Retro Tech | Index Page </title>
+        <meta name="author" content="Dev Community " />
+		
+<link href="index.css" rel="stylesheet">
+<script src="jquery-3.6.0.min.js"></script>
+<script src="wb.overlay.min.js"></script>
+<script src="wb.panel.min.js"></script>
+
+        <meta name="description" content="Dev Community For all your need!" />
+        <link rel="shortcut icon" href="favicon.jpg" type="image/x-icon" /> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+
+    <body>
+		<div style="z-index:1">
+			<marquee id="breakingnews" style="padding:4px 0px 4px 0px;position:absolute;left:0px;top:0;background-color:beige;width: 100%;  " onmouseover="this.scrollAmount=1" onmouseout="this.scrollAmount=2" scrollamount="2">
+			<span style="color:firebrick; font-size:16px;font-family:Arial;font-weight:normal;font-style:normal;text-decoration:none">New Project and Material are now available! </span>&nbsp;&nbsp;&nbsp;
+			<span style="color:firebrick; font-size:16px;font-family:Arial;font-weight:normal;font-style:normal;text-decoration:none">| &nbsp;&nbsp;&nbsp;&nbsp; <a href="" >Sample</a>  </span>
+		</marquee>
+			<script>
+			function initBreakingNews()
+			{
+			   var docWidth = 800;
+			
+			   if (typeof window.innerWidth != 'undefined')
+			   {
+				  docWidth = window.innerWidth;
+			   }
+			   else 
+			   if (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientWidth != 'undefined' && document.documentElement.clientWidth != 0)
+			   {
+				  docWidth = document.documentElement.clientWidth;
+			   }
+			   else
+			   {
+				  docWidth = document.getElementsByTagName('body')[0].clientWidth;
+			   }
+			   document.getElementById("breakingnews").style.width = docWidth.toString() + "px";
+			   document.getElementById("breakingnews").scrollAmount = 2;
+			   document.getElementById("breakingnews").scrollDelay = 20;
+			   document.getElementById("breakingnews").loop = -1;
+			}
+			if (document.getElementById)
+			{
+			   window.onload = initBreakingNews;
+			   window.onresize = initBreakingNews;
+			}
+			</script>
+			</div>
+
+		<div><br><br>
+			<center >
+<h1 class="header"> 
+	<a href=""><img src="favicon.png" style="width:100px; " ></a>
+
+	<a href="">
+		<script>
+
+			/*
+			RAINBOW TEXT Script by Matt Hedgecoe (c) 2002
+			Featured on JavaScript Kit
+			For this script, visit http://www.javascriptkit.com
+			*/
+			
+			var text="Retro Tech";
+			var speed=80;
+			
+			if (document.all||document.getElementById)
+			{
+			   document.write('<a href="" style="font-size:37px;font-weight:normal;font-style:normal;text-align:center;text-decoration:none;" id="highlight">' + text + '<\/a>');
+			   var storetext=document.getElementById? document.getElementById("highlight") : document.all.highlight;
+			}
+			else
+			   document.write(text);
+			
+			var hex=new Array("00","14","28","3C","50","64","78","8C","A0","B4","C8","DC","F0");
+			var r=1;
+			var g=1;
+			var b=1;
+			var seq=1;
+			function changetext()
+			{
+			   rainbow="#"+hex[r]+hex[g]+hex[b];
+			   storetext.style.color=rainbow;
+			}
+			function change()
+			{
+			   if (seq==6)
+			   {
+				  b--;
+				  if (b==0)
+					seq=1;
+			   }
+			   if (seq==5)
+			   {
+				  r++;
+				  if (r==12)
+					 seq=6;
+			   }
+			   if (seq==4)
+			   {
+				  g--;
+				  if (g==0)
+					 seq=5;
+			   }
+			   if (seq==3)
+			   {
+				  b++;
+				  if (b==12)
+					 seq=4;
+			   }
+			   if (seq==2)
+			   {
+				  r--;
+				  if (r==0)
+					 seq=3;
+			   }
+			   if (seq==1)
+			   {
+				  g++;
+				  if (g==12)
+					 seq=2;
+			   }
+			   changetext();
+			}
+			
+			function starteffect()
+			{
+			   if (document.all||document.getElementById)
+				  flash=setInterval("change()",speed);
+			}
+			starteffect();
+			</script></h1></a><br>
+
+		</center>
+		
+<center>
+<div style="height: auto  ; margin: 20px 2px;">
+<table  class="w3-table">
+	
+	<tr>
+		<th>No</th>
+		<th>Name</th>
+		<th>Base</th>
+		<th>Link</th>
+		<th>Status</th>
+	</tr>
+	<tr>
+		<th>1</th>
+		<td> Retro Tech | Dev Community </td>
+		<td>Html</td>
+		<td><a href="learning/index.html" > Redirect &nbsp;<i class="fa fa-external-link"></i> </a></td>
+		<td>
+			<div class="w3-light-grey w3-small">
+			<div class="w3-container w3-blue" style="width: 20%;">20%</div></div></td>
+	</tr>
+	<tr>
+		<th>2</th>
+		<td>Janarthanan | Protofolio </td>
+		<td>Html</td>
+		<td><a href="protofolio/index.html" >Redirect &nbsp;<i class="fa fa-external-link"></i></a></td>
+		<td>
+			<div class="w3-light-grey w3-small">
+			<div class="w3-container w3-blue" style="width: 45%;">45%</div></div></td>
+	</tr>
+	<tr>
+		<th>3</th>
+		<td>GO-Dynamik | Project-1 </td>
+		<td>Html</td>
+		<td><a href="Go-Dynamik/index.html" >Redirect &nbsp;<i class="fa fa-external-link"></i></a></td>
+		<td>
+			<div class="w3-light-grey w3-small">
+			<div class="w3-container w3-blue" style="width: 20%;">20%</div></div></td>
+	</tr>
+	<tr>
+		<th>4</th>
+		<td> Darasan</td>
+		<td>Java Script</td>
+		<td><a href="darasan/index.html" >Redirect &nbsp;<i class="fa fa-external-link"></i></a></td>
+		<td>
+			<div class="w3-light-grey w3-small">
+			<div class="w3-container w3-blue" style="width: 0%;">0%</div></div></td>
+	</tr>
+	<tr>
+		<th>5</th> 
+		<td>Movie's</td>
+		<td>Html</td>
+		<td><a href="movie/index.html" >Redirect &nbsp;<i class="fa fa-external-link"></i></a></td>
+		<td>
+			<div class="w3-light-grey w3-small">
+			<div class="w3-container w3-blue" style="width: 0%;">0%</div></div></td>
+	</tr>
+	<tr >
+		<th>6</th>
+		<td> File Manager </td>
+		<td>Php</td>
+		<td><a href="filemanag/index.html" >Redirect &nbsp;<i class="fa fa-external-link"></i></a></td>
+		<td>
+			<div class="w3-light-grey w3-small">
+			<div class="w3-container w3-blue" style="width: 0%; color: #f5f3ef;">0%</div></div></td>
+	</tr>
+	<tr >
+		<th>7</th>
+		<td> Protofolio</td>
+		<td></td>
+		<td><a href="My Web Sites/index.html" >Redirect &nbsp;<i class="fa fa-external-link"></i></a></td>
+		<td>
+			<div class="w3-light-grey w3-small">
+			<div class="w3-container w3-blue" style="width: 0%;">0%</div></div></td>
+	</tr>
+	<tr >
+		<th>8</th>
+		<td>JSP</td>
+		<td> Java Server Page</td>
+		<td><a href="JSP/index.jsp" >Redirect &nbsp;<i class="fa fa-external-link"></i></a></td>
+		<td>
+			<div class="w3-light-grey w3-small">
+			<div class="w3-container w3-blue" style="width: 0%;">0%</div></div></td>
+	</tr>
+	<tr >
+		<th>9</th>
+		<td></td>
+		<td></td>
+		<td><a href="\" >Redirect &nbsp;<i class="fa fa-external-link"></i></a></td>
+		<td>
+			<div class="w3-light-grey w3-small">
+			<div class="w3-container w3-blue" style="width: 0%;">0%</div></div></td>
+	</tr>
+	<tr >
+		<th>10</th>
+		<td> </td>
+		<td></td>
+		<td><a href="\" >Redirect &nbsp;<i class="fa fa-external-link"></i></a></td>
+		<td>
+			<div class="w3-light-grey w3-small">
+			<div class="w3-container w3-blue" style="width: 0%;">0%</div></div></td>
+	</tr>
+</table>
+
+<br>
+</center>
+<div class="footer">
+<span> <a href="" >Retro Tech </a></span>|
+<span> <a href="" > Dev Community  </a> </span>|
+<span> <a href="" > Source Code's </a> </span><br>
+<span> Copyrighted &copy; 2020</span><br>
+<a href="mailto:janarthanan007@gmail.com" style="float: right;">
+	<img name="stickyemail_img" src="email.gif" border="0"></a>
+</span></div>
+
+<style>
+	table ,th,td {
+		border: 1px solid black;
+	}
+.header
+{
+	font-size: 35px;   
+	text-decoration: none; 
+	color:slategray; 
+	font-weight: bold;
+}
+.footer{
+ background:white;
+ color: linear-gradient(#43cea2, #185a9d);
+ width: 100%;
+ padding: 5px;
+ margin: 10px 1px;
+ height: auto;
+ text-align: center;
+ font-size: 18px;
+ text-decoration: none;
+ 
+}
+a{
+	text-decoration: none;
+}
+.a :hover
+{
+	background: #185a9d;
+	transition: cubic-bezier();
+}
+</style>
+	</body>
+</html>
