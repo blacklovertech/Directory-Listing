@@ -1,4 +1,4 @@
-# Celeron Dude Indexer / Simple Directory Index
+#  Indexer / Simple Directory Index
 
 This script lists all files in a directory and sub-directories on a pretty looking page. Demo. All icons are embedded into index.php so you can just drop this file anywhere you want. Some configurable options are available in index.php. 
 
